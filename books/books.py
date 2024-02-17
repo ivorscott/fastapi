@@ -11,6 +11,6 @@ BOOKS = [
     { 'title': "title six", 'author': 'Author six','category':'math'},
 ]
 
-@app.get("/")
-async def root():
+@app.get("/books")
+async def books():
     return BOOKS
